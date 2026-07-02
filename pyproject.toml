@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "--import-mode=importlib"
+testpaths = ["tests"]
+markers = [
+    "gpu: marks tests that require a GPU",
+    "slow: marks tests that are slow to run",
+]
